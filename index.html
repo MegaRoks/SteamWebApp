@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>Maserati</title>
-    <link href="CSS/Styles.css" rel="stylesheet" type="text/css" />
-    <script src="JS/jquery-1.11.0.min.js"></script>
+    <link href="CSS/styles.css" rel="stylesheet" type="text/css" />
+    <script src="JS/jquery.min.js"></script>
 </head>
 
 <body>
@@ -22,108 +22,14 @@
             </form>
         </div>
         <div class="avatar-profile">
-            <div class="info-profile">
-                <table id="profile">
-<!--
-                   <h3>Информация о пользователи</h3>
-                    <tr class="row">
-                        <th class="nyr">SteamID</th>
-                        <td class="cell" id="info-steamid"></td>
-                    </tr>
-                    <tr class="row">
-                        <th class="nyr">Преватность</th>
-                        <td class="cell" id="info-communityvisibilitystate"></td>
-                    </tr>
-                    <tr class="row">
-                        <th class="nyr">Nike</th>
-                        <td class="cell" id="info-personaname"></td>
-                    </tr>
-                    <tr class="row">
-                        <th class="nyr">Имя</th>
-                        <td class="cell" id="info-realname"></td>
-                    </tr>
-                    <tr class="row">
-                        <th class="nyr">Статус</th>
-                        <td class="cell" id="info-personastate"></td>
-                    </tr>
-                    <tr class="row">
-                        <th class="nyr">Сейчас играет</th>
-                        <td class="cell" id="info-gameextrainfo"></td>
-                    </tr>
-                    <tr class="row">
-                        <th class="nyr">Дата регистрации</th>
-                        <td class="cell" id="info-timecreated"></td>
-                    </tr>
-                    <tr class="row">
-                        <th class="nyr">Был в сети</th>
-                        <td class="cell" id="info-lastlogoff"></td>
-                    </tr>
-                    <tr class="row">
-                        <th class="nyr">Community Ban</th>
-                        <td class="cell" id="info-CommunityBanned"></td>
-                    </tr>
-                    <tr class="row">
-                        <th class="nyr">VAC Ban</th>
-                        <td class="cell" id="info-VACBanned"></td>
-                    </tr>
-                    <tr class="row">
-                        <th class="nyr">Trade Ban</th>
-                        <td class="cell" id="info-EconomyBan"></td>
-                    </tr>
-                    <tr class="row">
-                        <th class="nyr">Число VAC Bans</th>
-                        <td class="cell" id="info-NumberOfVACBans"></td>
-                    </tr>
-                    <tr class="row">
-                        <th class="nyr">Число дней запрета</th>
-                        <td class="cell" id="info-DaysSinceLastBan"></td>
-                    </tr>
-                    <tr class="row">
-                        <th class="nyr">Запрет в играх</th>
-                        <td class="cell" id="info-NumberOfGameBans"></td>
-                    </tr>
--->
-                </table>
+            <div class="profile">
+                <div class="info-profile" id="profile"></div>
+                <div class="info-avatar" id="avatars"></div>
+                <div class="games" id="games"></div>
             </div>
-            <div class="info-avatar">
-                <table id="avatars">
-
-                </table>
-            </div>
-            <div class="friends" id="">             
-                <table id="friends">
-                   <h3>Друзья</h3>
-                    <thead>
-                        <tr class="row">
-                            <th class="nyr">Steam ID</th>
-                            <th class="nyr">Срок дружбы</th>
-                            <th class="nyr">Друзья</th>
-                        </tr>
-                    </thead>
-                </table>
-            </div>
-            <div class="historys" id="history">              
-                <table id="historys">
-                   <h3>История</h3>
-                    <thead>
-                        <tr class="row">
-                            <th class="nyr">SteamID</th>
-                        </tr>
-                    </thead>
-                </table>
-            </div>
-            <div class="games">
-                <h3>Игры</h3>
-                <table id="games">
-                    <thead>
-                        <tr class="row">
-                            <th class="nyr">Logo</th>
-                            <th class="nyr">Назвиние</th>
-                            <th class="nyr">Ч/Н</th>
-                            <th class="nyr">Ч/В</th>
-                        </tr>
-                    </thead>
-                </table>
+            <div class="friends_history">
+                <div class="friends" id="friends"></div>
+                <div class="historys" id="historys"></div>
             </div>
         </div>
     </div>

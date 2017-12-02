@@ -23,7 +23,7 @@ h3 {
 }
 
 .info-profile {
-    width: 267px;
+    width: 260px;
     height: 475px;
     display: inline-block;
 }
@@ -57,18 +57,19 @@ input {
     border: 0;
 }
 
-    input[type='submit'] {
-        background: #4EA4BD;
-        width: 100px;
-        color: #f7f7f7;
-    }
+input[type='submit'] {
+    background: #4EA4BD;
+    width: 100px;
+    color: #f7f7f7;
+}
 
-        input[type='submit']:hover {
-            background: #455d53;
-            color: #000000;
-        }
+input[type='submit']:hover {
+    background: #455d53;
+    color: #000000;
+}
 
-.cell, .nyr {
+.cell,
+.nyr {
     padding: 0.90em 1.5em;
     text-align: left;
 }
@@ -90,12 +91,11 @@ input {
 }
 
 .row:hover {
-    background-color: rgba(129,208,177,.3);
+    background-color: rgba(129, 208, 177, .3);
 }
 
 .games {
-    padding-right: 900px;
-    float: left;
+    width: 480;
 }
 
 .error {
@@ -106,8 +106,8 @@ input {
 .BG_top {
     height: 54px;
     text-align: left;
-    background: rgba( 0, 0, 0, 0.2 );
-    border-bottom: 1px rgba( 0, 0, 0, 0.6 );
+    background: rgba( 0, 0, 0, 0.2);
+    border-bottom: 1px rgba( 0, 0, 0, 0.6);
 }
 
 
@@ -144,10 +144,12 @@ input {
     font-size: 12px;
     margin-bottom: 12px;
 }
+
 form {
     width: 478px;
     float: left;
 }
+
 .cont_left {
     width: 560px;
     float: left;
@@ -156,7 +158,7 @@ form {
 
 .avatar-profile {
     width: auto;
-    display: block;
+    display: flex;
 }
 
 .header {
@@ -166,5 +168,14 @@ form {
 
 .historys {
     width: auto;
+    display: inline-block;
+}
+
+.profile {
+    width: 485px;
+    display: inline-block;
+}
+
+.friends_history {
     display: inline-block;
 }
