@@ -6,7 +6,6 @@
     <title>Maserati</title>
     <link href="CSS/Styles.css" rel="stylesheet" type="text/css" />
     <script src="JS/jquery-1.11.0.min.js"></script>
-    <script src="JS/scrypts.js"></script>
 </head>
 
 <body>
@@ -24,128 +23,108 @@
         </div>
         <div class="avatar-profile">
             <div class="info-profile">
-                <h3>Информация о пользователи</h3>
-                <table>
+                <table id="profile">
+<!--
+                   <h3>Информация о пользователи</h3>
                     <tr class="row">
                         <th class="nyr">SteamID</th>
-                        <td class="cell" id="steam-id"></td>
+                        <td class="cell" id="info-steamid"></td>
                     </tr>
                     <tr class="row">
                         <th class="nyr">Преватность</th>
-                        <td class="cell"></td>
+                        <td class="cell" id="info-communityvisibilitystate"></td>
                     </tr>
                     <tr class="row">
                         <th class="nyr">Nike</th>
-                        <td class="cell"></td>
+                        <td class="cell" id="info-personaname"></td>
                     </tr>
                     <tr class="row">
                         <th class="nyr">Имя</th>
-                        <td class="cell"></td>
+                        <td class="cell" id="info-realname"></td>
                     </tr>
                     <tr class="row">
                         <th class="nyr">Статус</th>
-                        <td class="cell"></td>
+                        <td class="cell" id="info-personastate"></td>
                     </tr>
                     <tr class="row">
                         <th class="nyr">Сейчас играет</th>
-                        <td class="cell"></td>
+                        <td class="cell" id="info-gameextrainfo"></td>
                     </tr>
                     <tr class="row">
                         <th class="nyr">Дата регистрации</th>
-                        <td class="cell"></td>
+                        <td class="cell" id="info-timecreated"></td>
                     </tr>
                     <tr class="row">
                         <th class="nyr">Был в сети</th>
-                        <td class="cell"></td>
+                        <td class="cell" id="info-lastlogoff"></td>
                     </tr>
                     <tr class="row">
                         <th class="nyr">Community Ban</th>
-                        <td class="cell"></td>
+                        <td class="cell" id="info-CommunityBanned"></td>
                     </tr>
                     <tr class="row">
                         <th class="nyr">VAC Ban</th>
-                        <td class="cell"></td>
+                        <td class="cell" id="info-VACBanned"></td>
                     </tr>
                     <tr class="row">
                         <th class="nyr">Trade Ban</th>
-                        <td class="cell"></td>
+                        <td class="cell" id="info-EconomyBan"></td>
                     </tr>
                     <tr class="row">
                         <th class="nyr">Число VAC Bans</th>
-                        <td class="cell"></td>
+                        <td class="cell" id="info-NumberOfVACBans"></td>
                     </tr>
                     <tr class="row">
                         <th class="nyr">Число дней запрета</th>
-                        <td class="cell"></td>
+                        <td class="cell" id="info-DaysSinceLastBan"></td>
                     </tr>
                     <tr class="row">
                         <th class="nyr">Запрет в играх</th>
-                        <td class="cell"></td>
+                        <td class="cell" id="info-NumberOfGameBans"></td>
                     </tr>
+-->
                 </table>
             </div>
             <div class="info-avatar">
-                <table>
-                    <h3>Аватар</h3>
-                    <tr class="row">
-                        <td class="cell"><img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/3d/3db37f813fee6c2047a2da5b2d552aec380b51b3_full.jpg" />
-                        </td>
+                <table id="avatars">
+
                 </table>
             </div>
-            <div class="friends">
-                <h3>Друзья</h3>
-                <table>
+            <div class="friends" id="">             
+                <table id="friends">
+                   <h3>Друзья</h3>
                     <thead>
                         <tr class="row">
-                            <th class="nyr">Авотар</th>
-                            <th class="nyr">Nike</th>
                             <th class="nyr">Steam ID</th>
                             <th class="nyr">Срок дружбы</th>
                             <th class="nyr">Друзья</th>
                         </tr>
                     </thead>
-                    <tr class="row">
-                        <td class="cell"><img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/3d/3db37f813fee6c2047a2da5b2d552aec380b51b3.jpg" /></td>
-                        <td class="cell"></td>
-                        <td class="cell"></td>
-                        <td class="cell"></td>
-                        <td class="cell"></td>
-                    </tr>
                 </table>
             </div>
-            <div class="hisroti">
-                <h3>История</h3>
-                <table>
+            <div class="historys" id="history">              
+                <table id="historys">
+                   <h3>История</h3>
                     <thead>
                         <tr class="row">
                             <th class="nyr">SteamID</th>
                         </tr>
                     </thead>
-                    <tr class="row">
-                        <td class="cell">76561198049827773</td>
-                    </tr>
                 </table>
             </div>
-        </div>
-        <div class="games">
-            <h3>Игры</h3>
-            <table>
-                <tr class="row">
+            <div class="games">
+                <h3>Игры</h3>
+                <table id="games">
                     <thead>
                         <tr class="row">
                             <th class="nyr">Logo</th>
                             <th class="nyr">Назвиние</th>
-                            <th class="nyr">Часов в неделю</th>
-                            <th class="nyr">Всего часов</th>
+                            <th class="nyr">Ч/Н</th>
+                            <th class="nyr">Ч/В</th>
                         </tr>
                     </thead>
-                    <tr class="row">
-                        <td class="cell"><img src="http://media.steampowered.com/steamcommunity/public/images/apps/570/d4f836839254be08d8e9dd333ecc9a01782c26d2.jpg" /></td>
-                        <td class="cell"></td>
-                        <td class="cell"></td>
-                        <td class="cell"></td>
-                    </tr>
-            </table>
+                </table>
+            </div>
         </div>
     </div>
     <script src="JS/scrypts.js"></script>
