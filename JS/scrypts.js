@@ -12,12 +12,10 @@ $("#id_button").click(function (e) {
         dataType: "json",
         success: function (data) {
             if (data.msg == 'OK') {
-                console.log("1");
                 $('#error').hide();
                 $('#avatar-profile').show();
                 SubmitForm(data, UserId);
             } else {
-                console.log("2");
                 $('#avatar-profile').hide();
                 $('#error').show();
                 SubmitFormErr();
