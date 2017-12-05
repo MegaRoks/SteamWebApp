@@ -1,6 +1,6 @@
 body {
-    width:100%; 
-    height:100%;
+    width: 100%;
+    height: 100%;
     font: 10px Arial, sans-serif;
     background: #2B2B2B;
 }
@@ -70,6 +70,7 @@ input[type='submit']:hover {
     color: #000000;
 }
 
+.cellHis,
 .cell,
 .nyr {
     padding: 0.90em 1.5em;
@@ -160,7 +161,7 @@ form {
 
 .avatar-profile {
     margin: 60px auto;
-    width: 935px;
+    width: 990px;
     display: flex;
 }
 

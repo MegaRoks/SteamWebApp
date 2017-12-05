@@ -90,6 +90,7 @@ function SubmitForm(data, UserId) {
         $('#history').append(`
                 <tr class="row">
                     <td class="cell">${UserId}</td>
+                    <td class="cellHid">${data.id}</td>
                 </tr>`);
     } else {
         $('#historys').html(`
@@ -100,9 +101,11 @@ function SubmitForm(data, UserId) {
                 </tr>
                 <tr class="row">
                     <td class="cell">${UserId}</td>
+                    <td class="cellHid">${data.id}</td>
                 </tr>
             </table>`);
     }
+    $('.cellHid').hide();
 
     $('#avatars').html(`
         <h3>Аватар</h3>
@@ -169,4 +172,39 @@ function SubmitFormErr() {
                 <h3>Ни один пользователь не может быть отображен.</h3><br><br>
             </div>
         </div>`);
+}
+
+$.contextMenu({
+    selector: '#history .cell',
+    items: {
+        delete: {
+            name: 'Удалить',
+            icon: 'delete'
+        },
+        clear: {
+            name: 'Очистить',
+            icon: 'clear'
+        },
+    },
+    callback: function (key, options) {
+        if (key == "delete") {
+            var j = $(this).parent('tr').index();
+            del(j);
+        } else {
+            $("#history .row").find("td").remove();
+        }
+    }
+});
+
+function del(j) {
+    var id = document.getElementById('history').rows[j].cells[1].innerHTML;
+    $.ajax({
+        method: "GET",
+        url: "http://project-megaroks931128.codeanyapp.com/users/del/?id=" + id,
+        dataType: "json",
+        success: function (data) {
+            console.log('успех');
+        }
+    })
+    $("#history .row").eq(j).remove();
 }
